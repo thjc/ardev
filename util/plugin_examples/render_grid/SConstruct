@@ -1,0 +1,50 @@
+# Slotmanager plugin for ardev build file
+
+import subprocess
+ccflags = ["-g"]
+ldflags = ["-g", "-module"]
+libs = ["-lGL"]
+
+# Environment setup
+env = Environment(
+	CC = 'gcc', 
+	CCFLAGS = ccflags,
+	LIBS = libs,
+	LINKFLAGS = ldflags,
+	tools = ["default"], 
+	toolpath = '.', 
+)
+
+parseConfigs=['pkg-config --cflags --libs ardev ardev-cm']
+
+for cfg in parseConfigs:
+  print "Checking for ["+cfg+"]"
+  try:
+    env.ParseConfig(cfg)
+    print "  Success"
+  except OSError,e:
+    print "Unable to parse config ["+cfg+"]"
+
+
+# Check for required libraries, header files and functions
+missing_libraries = []
+conf = Configure(env)
+
+if len(missing_libraries) > 0:
+	print 'Some required libraries are missing, exiting!'
+	Exit(1)
+
+conf.Finish()
+# Checks finished
+
+Export('env')
+
+sources = Split('rendergridplugin.cpp render_grid.cpp')
+
+sharedObjs = env.SharedObject(sources);
+
+sharedLib = env.SharedLibrary('ar_render_grid', sharedObjs)
+
+env.Alias('install', '/usr/local/lib/')
+env.Install('/usr/local/lib/', sharedLib)
+

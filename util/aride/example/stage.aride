@@ -1,0 +1,29 @@
+<aride_project version="0.3" >
+ <objects>
+  <output Width="640" DisplayName="" Camera="GUID::3" Height="480" CameraPosition="GUID::12" Type="OutputX11" GUID="GUID::1" Enabled="True" Parent="" Name="OutputX110" FullScreen="False" Capture="GUID::2" />
+  <capture CameraPositionObject="GUID::6" CameraObject="GUID::3" Type="CaptureStage" GUID="GUID::2" Enabled="True" Parent="" Name="CaptureFile0" PlayerClient="GUID::4" RobotName="robot1" />
+  <camera Origin="0 0 0" Aspect="1.6" Direction="1 0 0" Type="CameraConstant" GUID="GUID::3" Enabled="True" Parent="" Up="0 0 1" Name="CameraConstant0" SensorWidth="0.008" CalibrationFile="" f_fov="45" />
+  <misc PlayerPort="6665" PlayerServer="localhost" Type="PlayerClientInterface" GUID="GUID::4" Enabled="True" Parent="" Name="PlayerClientInterface0" />
+  <position Type="PositionConstant" GUID="GUID::6" Enabled="True" Parent="" Name="CameraPosition_base" Position="0 0 1 0 -20 0" />
+  <position Type="PositionConstant" GUID="GUID::7" Enabled="True" Parent="" Name="PositionConstant0" Position="0 0 0.5 0 0 0" />
+  <render WithOutline="False" Type="RenderPlayerLaser" GUID="GUID::8" Enabled="True" Parent="" Colour="1 0 0 1" Name="RenderPlayerLaser0" PlayerClient="GUID::11" RayInterval="20" />
+  <render Type="RenderGraphics2DHandler" GUID="GUID::9" Enabled="True" Parent="" Name="graphics_2d" />
+  <render Type="RenderGraphics3DHandler" GUID="GUID::10" Enabled="True" Parent="" Name="graphics_3d" />
+  <misc PlayerPort="6665" PlayerServer="localhost" Type="PlayerClientInterface" GUID="GUID::11" Enabled="True" Parent="" Name="Robot" />
+  <position Type="PositionConstant" GUID="GUID::12" Enabled="True" Parent="" Name="PositionConstant1" Position="0 0 0 20 0 0" />
+ </objects>
+ <environment Camera="GUID::3" GUID="GUID::0" Enabled="True" Name="Environment0" Capture="GUID::2" Output="GUID::1" >
+  <item GUID="GUID::4" />
+ </environment>
+ <display_list GUID="GUID::5" Name="DisplayList0" >
+  <item GUID="GUID::6" >
+   <item GUID="GUID::12" />
+  </item>
+  <item GUID="GUID::7" >
+   <item GUID="GUID::8" />
+   <item GUID="GUID::9" />
+   <item GUID="GUID::10" />
+  </item>
+  <item GUID="GUID::11" />
+ </display_list>
+</aride_project>

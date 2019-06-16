@@ -1,0 +1,2 @@
+SUBDIRS = config_manager @ARIDE_DIR@ @CALIB_DIR@ @PLAYER_PLUGIN_DIR@
+

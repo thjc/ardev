@@ -1,0 +1,12 @@
+# DO NOT edit ardev.pc; edit ardev.pc.in instead
+
+prefix=@prefix@
+
+# this gives access to the ardev header files for compiling plugins
+
+Name: ardev
+Description: Augmented Reality toolkit
+Version: @VERSION@
+Requires: 
+Libs: -L${prefix}/lib -lardev -lthjc @LIBS@ @PLAYER_LIBS@ @OPENCV_LIBS@ @ARTOOLKITPLUS_LIBS@ @IMAGEMAGICK_LIBS@ @DC1394_LIBS@
+Cflags: -I${prefix}/include/ardev

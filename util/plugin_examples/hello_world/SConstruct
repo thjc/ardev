@@ -1,0 +1,54 @@
+# Hello World plugin for ardev build file
+
+import subprocess
+ccflags = ["-g"]
+ldflags = ["-g", "-module"]
+libpath = ['/usr/local/lib/', '/usr/lib/']
+libs = []
+cpppath = ['/usr/local/include/ardev/']
+
+# Environment setup
+env = Environment(
+	CC = 'gcc', 
+	CCFLAGS = ccflags,
+	LIBS = libs,
+	CPPPATH = cpppath, 
+	LINKFLAGS = ldflags,
+	LIBPATH = libpath,
+	tools = ["default"], 
+	toolpath = '.', 
+)
+
+parseConfigs=['pkg-config --cflags --libs ardev']
+
+for cfg in parseConfigs:
+  print "Checking for ["+cfg+"]"
+  try:
+    env.ParseConfig(cfg)
+    print "  Success"
+  except OSError,e:
+    print "Unable to parse config ["+cfg+"]"
+
+
+# Check for required libraries, header files and functions
+missing_libraries = []
+conf = Configure(env)
+
+if len(missing_libraries) > 0:
+	print 'Some required libraries are missing, exiting!'
+	Exit(1)
+
+conf.Finish()
+# Checks finished
+
+Export('env')
+
+sources = Split('helloworldplugin.cpp')
+
+sharedObjs = env.SharedObject(sources);
+
+sharedLib = env.SharedLibrary('ar_hello_world', sharedObjs)
+
+env.Alias('install', '/usr/local/lib/')
+env.Install('/usr/local/lib/', sharedLib)
+

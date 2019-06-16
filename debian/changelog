@@ -1,0 +1,31 @@
+ardev (0.10.1-1~ppa2) maverick; urgency=low
+
+  * fix library capitilisation
+
+ -- Toby Collett <thjc@plan9.net.nz>  Sat, 27 Nov 2010 15:35:37 +0100
+
+ardev (0.10.1-1~ppa1) maverick; urgency=low
+
+  * rebuild for maverick
+  * update for artoolkitplus 2.2
+
+ -- Toby Collett <thjc@plan9.net.nz>  Fri, 26 Nov 2010 22:42:39 +0100
+
+ardev (0.10.0-1~ppa1) lucid; urgency=low
+
+  * upstream release 0.10.0
+  * lucid build updates
+
+ -- Toby Collett <thjc@plan9.net.nz>  Thu, 22 Jul 2010 07:38:21 +0100
+
+ardev (0.9.0-rc2~svn-1~ppa1) karmic; urgency=low
+
+  * updates to build with artookitplus
+
+ -- Toby Collett <thjc@plan9.net.nz>  Tue, 30 Jun 2009 11:07:07 +0200
+
+ardev (0.9.0-rc1-1~ppa1) karmic; urgency=low
+
+  * Initial Release
+
+ -- Toby Collett <thjc@plan9.net.nz>  Sun, 28 Jun 2009 14:07:59 +0200

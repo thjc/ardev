@@ -1,0 +1,25 @@
+This package was debianized by Daniel Brooker <dev@inro.co.nz> on
+Wed, 21 Jan 2009 14:04:01 +1300.
+
+It was downloaded from <url://example.com>
+
+Upstream Author(s): 
+
+    <put author's name and email here>
+    <likewise for another author>
+
+Copyright: 
+
+    <Copyright (C) 2009 Toby Collett>
+    <The University of Auckland Robotics Group>
+    <http://robotics.ece.auckland.ac.nz/>
+
+License:
+
+    <GNU LESSER GENERAL PUBLIC LICENSE>
+
+The Debian packaging is (C) 2009, Daniel Brooker <dev@inro.co.nz> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+
+# Please also look if there are files or directories which have a
+# different copyright/license attached and list them here.

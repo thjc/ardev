@@ -1,0 +1,2 @@
+nobase_include_HEADERS = libthjc/exception.h libthjc/geometry.h libthjc/matrix.h libthjc/misc.h libthjc/vector3d.h \
+	libthjc/logger.h libthjc/logger_out_console.h libthjc/serialcoms.h libthjc/camera.h

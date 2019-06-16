@@ -1,0 +1,127 @@
+ARDev is an augmented reality toolkit to assist robot
+developers in debugging complex robot sensors. 
+
+It primarily provides sensor visualisations at this stage. 
+
+The currently implemented objects primarily work with 
+Player/Stage based robots.
+
+ARDev has been developed and tested in ubuntu linux, 
+other flavours of linux should work fine but are not 
+tested.
+
+ARDev was written by Toby Collett as part of his PhD research
+at the University of Auckland. I am keen to hear any feedback, 
+and should be able to provide 
+some personal support getting it running, so get in touch by 
+email to ardev _at_ plan9.net.nz 
+
+More detailed documentation is available in the doc directory.
+You may need to use doxygen to generate it.
+
+INSTALLATION
+------------
+
+1. Download and install libthjc (from the same place you got ardev)
+2. Make sure the other required components are installed on the system
+   This should be a reasonably accurate list, they need to be the dev versions
+	qt (4.1)
+	gl/glu/glut
+	sdl
+	libjpeg
+	imagemagick
+3. Download any of the optional extra libraries
+	doxygen (if you want the API documentation)
+	libdc1394 (built with version 2.0-pre6, later versions may work)
+	ffmpeg (often not functioning)
+	artoolkit (if you want to track artoolkit markers)
+	libfep (inhouse to the university of auckland robotics group at this stage)
+	playerstage
+	opencv
+	artoolkitplus
+4. run configure (dont forget to enable any of the optional libs you want)
+
+5. build the project (make)
+
+GETTING STARTED
+---------------
+
+There are two basic methods described here, one just gives an idea of the
+software using the stage based debug objects for capturing. This is likely
+to work first try out of the box, but is not that useful.
+
+Option 2 uses an overhead camera and a player based robot. This is useful
+but more complicated. Probably trying option 1 first and then progressing 
+to option 2 once thats done is a good plan.
+
+Both the methods described here use the aride GUI for configuring ardev so to 
+get start go to the aride directory (util/aride), then follow either option
+1 or 2 below.
+
+OPTION 1:
+You will need player (tested with 2.0.1), with at least the fake localize
+driver, and stage (2.0.1)
+
+Run stage using the config file in util/aride/example/simple.cfg
+
+then run aride specifing the stage aride config file
+i.e. ./aride ./example/stage.aride
+
+then click on control->run and it should be all go.
+You should be able to driver the robot using playerjoy or playerv etc and
+watch the visualisation of the sensor data. This is simulating the ardev
+system running on the robots on board camera.
+
+OPTION 2:
+This is based on player and the artoolkitplus fiducial tracker.
+
+My example uses our labs pioneer robot, with a player server for serving up the camera images.
+The default artoolkitplus marker is ID '10', this can be changed in the config GUI.
+
+Change to the aride directory.
+run ./aride example/overhead.aride
+(sleepy is our pioneer, we have seven...sleepy, happy, grumpy ... got it?)
+check the settings the UI, particularly you will need to change the server addresses 
+for the player interfaces.
+
+you will also need to specify a camera calibration file the format is:
+Translation (3 floats)
+Rotation Matrix (9 floats)
+focal distance
+sensor width (x and y)
+image size (x and y)
+scale factors (x and y)
+
+Fields are sepearated by white space.
+the application ./util/calib/calibapp may help you generate this file. It uses tsai calibration to get the values
+and does basic detection of circles on a large cube to find the source points.
+If you are not using the artoolkitplus or opencv trackers then you may be able to omit the calibration file altogether.
+
+you could generate the file manually the most important value is the 'tilt' or y axes rotation values.
+an example calibration file is also provided in the example dir.
+
+in theory, provided your parameters are all correct and your player servers are running, simply click on
+the green play button ('start') and things should be all go.
+
+Im keen on people using this software so dont hesitate to contact me if you are wanting to try the software and
+are having trouble. This project is under active development and any ideas voiced will certainly be considered.
+
+
+
+OTHER STUFF
+-----------
+
+
+
+3rd party projects used/referred to
+** Ive attempted to keep this list fairly complete, 
+but obviously there will be projects I have referred to 
+online that I have missed out ****
+
+Player/Stage
+NeHe Studios (lots of varied reference for open gl sections
+DigiBen/Gametutorials.com (the 3ds model loader)
+MIT HITlab ARtoolkit
+ARToolKitPlus
+OpenCV
+

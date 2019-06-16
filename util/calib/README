@@ -1,0 +1,19 @@
+Using calib gui for manual calibration
+
+1) Get screen capture of a 27 point calibration object (png or jpeg)
+2) create a file with the 3d points of the markers
+3) create a file with the 2d image points of the markers
+
+The files for 2 and 3 must be in teh same order
+The automated order is:
+ - divide to three faces (9 points each)
+ - for each face, center point, top point then clockwise round
+
+4) open up calibration GUI
+5) choose file-> open and select your screenshot file
+6) choose file-> Load 3d points, and load the 3d coord file
+7) choose file-> Load 2d points and load the 2d coord file
+8) Check the points are at the right places in the image
+9) Click calibrate
+10) File Save to save your calibration
+

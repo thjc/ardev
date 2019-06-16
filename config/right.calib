@@ -1,0 +1,9 @@
+0.567502 -39.8317 -20.9336
+640 480
+35.611 27.0866
+7.80613 0
+
+File Format:
+offset from Tracker Position (mm X,Y,Z)
+Width Height (pixels)
+Feild of view (deg X Y)

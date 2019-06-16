@@ -1,0 +1,77 @@
+Source: ardev
+Section: science
+Priority: extra
+Maintainer: Toby Collett <thjc@plan9.net.nz>
+Build-Depends: debhelper (>= 7.0.0), cdbs (>= 0.4), libltdl7-dev, libcv-dev, libcvaux-dev, libhighgui-dev, libglut3-dev, libmagick++9-dev, libsdl1.2-dev, libqt4-dev, libmysqlclient15-dev, libsqlite3-dev, robot-player-dev (>= 3.0), libanttweakbar-dev, artoolkitplus-dev
+Standards-Version: 3.9.0
+Homepage: http://ardev.sourceforge.net/
+
+Package: libardev0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An augmented reality toolkit - Runtime Libraries
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the runtime libraries
+
+Package: libardev-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libanttweakbar-dev, libhighgui-dev, libglut3-dev, libmagick++9-dev, libsdl1.2-dev, libqt4-dev, libmysqlclient15-dev, libsqlite3-dev
+Description: An augmented reality toolkit - Development Libraries
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the development libraries for ardev
+
+Package: libardev-cm0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An augmented reality toolkit - Runtime Libraries
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the runtime libraries for the ardev configuration manager library
+
+Package: libardev-cm-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libardev-dev
+Description: An augmented reality toolkit - Development Libraries
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the development files for the ardev configuration manager library
+
+Package: ardev-calib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An augmented reality toolkit - Camera Calibration utility
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the ardev-calib calibration utility
+
+Package: aride
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An augmented reality toolkit - Graphical configuration utility
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the aride configuration utility for ardev
+
+Package: ardev-player-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An augmented reality toolkit - Runtime Libraries
+ Ardev in an augmented reality toolkit that has primarily been developed for robotics applications.
+ The library is based on using calibrated cameras and perspective projection which allows for
+ accurate rendering of geometric data.
+ .
+ This package contains the player plugin library for ardev

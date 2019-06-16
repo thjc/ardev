@@ -1,0 +1,756 @@
+diff -rud ./new/include/ARToolKitPlus/arBitFieldPattern.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/arBitFieldPattern.h
+--- ./new/include/ARToolKitPlus/arBitFieldPattern.h	2006-02-09 20:31:06.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/arBitFieldPattern.h	2006-03-31 10:52:45.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: arBitFieldPattern.h 137 2006-02-09 07:31:06Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARBITFIELDPATTERN_HEADERFILE__
+@@ -84,7 +84,7 @@
+ 	const unsigned int bchBits = 12;
+ 	const unsigned int idMaxBCH = (1<<bchBits) - 1;
+ 
+-	// array with indices for 90° CW rotated grid
++	// array with indices for 90 CW rotated grid
+ 	const int rotate90[] = {
+ 		30, 24, 18, 12,  6,  0,
+ 		31, 25, 19, 13,  7,  1,
+diff -rud ./new/include/ARToolKitPlus/ar.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/ar.h
+--- ./new/include/ARToolKitPlus/ar.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/ar.h	2006-03-31 10:52:31.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: ar.h 111 2006-01-04 08:06:18Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITAR_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/arMulti.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/arMulti.h
+--- ./new/include/ARToolKitPlus/arMulti.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/arMulti.h	2006-03-31 10:52:39.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: arMulti.h 111 2006-01-04 08:06:18Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITMULTI_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/ARToolKitPlus.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/ARToolKitPlus.h
+--- ./new/include/ARToolKitPlus/ARToolKitPlus.h	2006-01-26 00:10:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/ARToolKitPlus.h	2006-03-31 10:52:50.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: ARToolKitPlus.h 121 2006-01-25 11:10:05Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITPLUS_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/byteSwap.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/byteSwap.h
+--- ./new/include/ARToolKitPlus/byteSwap.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/byteSwap.h	2006-03-31 10:52:25.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id$
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __BYTESWAP_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/CameraAdvImpl.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/CameraAdvImpl.h
+--- ./new/include/ARToolKitPlus/CameraAdvImpl.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/CameraAdvImpl.h	2006-03-31 10:52:05.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id$
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_CAMERAADVIMPL_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/CameraFactory.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/CameraFactory.h
+--- ./new/include/ARToolKitPlus/CameraFactory.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/CameraFactory.h	2006-03-31 10:51:59.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id$
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_CAMERAFACTORY_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/Camera.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/Camera.h
+--- ./new/include/ARToolKitPlus/Camera.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/Camera.h	2006-03-31 10:51:46.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id$
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_CAMERA_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/CameraImpl.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/CameraImpl.h
+--- ./new/include/ARToolKitPlus/CameraImpl.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/CameraImpl.h	2006-03-31 10:51:53.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id$
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_CAMERAIMPL_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/config.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/config.h
+--- ./new/include/ARToolKitPlus/config.h	2006-01-15 00:10:14.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/config.h	2006-03-31 10:52:13.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: config.h 117 2006-01-14 11:10:14Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ /**
+diff -rud ./new/include/ARToolKitPlus/extra/BCH.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/BCH.h
+--- ./new/include/ARToolKitPlus/extra/BCH.h	2006-02-10 01:26:58.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/BCH.h	2006-03-31 10:54:50.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: BCH.h 138 2006-02-09 12:26:59Z breiting $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __BCH_CODE__H__
+diff -rud ./new/include/ARToolKitPlus/extra/GPP.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/GPP.h
+--- ./new/include/ARToolKitPlus/extra/GPP.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/GPP.h	2006-03-31 10:54:44.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: GPP.h 111 2006-01-04 08:06:18Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __GPP_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/extra/Profiler.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/Profiler.h
+--- ./new/include/ARToolKitPlus/extra/Profiler.h	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/Profiler.h	2006-03-31 10:54:33.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: Profiler.h 139 2006-02-10 07:18:16Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITPLUS_PROFILER_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/extra/rpp.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/rpp.h
+--- ./new/include/ARToolKitPlus/extra/rpp.h	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/extra/rpp.h	2006-03-31 10:54:40.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id$
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __LINK_WITH_RPP__
+diff -rud ./new/include/ARToolKitPlus/ImageGrabber.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/ImageGrabber.h
+--- ./new/include/ARToolKitPlus/ImageGrabber.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/ImageGrabber.h	2006-03-31 10:51:40.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: ImageGrabber.h 111 2006-01-04 08:06:18Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITIMAGEGRABBER_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/Logger.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/Logger.h
+--- ./new/include/ARToolKitPlus/Logger.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/Logger.h	2006-03-31 10:41:12.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: Logger.h 111 2006-01-04 08:06:18Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTKLOGGER_HEADERFILE__
+@@ -60,6 +60,8 @@
+  */
+ class Logger {
+ public:
++	virtual ~Logger() {;};
++
+ 	/// Passes a simple string to the implementing instance
+ 	virtual void artLog(const char* nStr) = 0;
+ 
+diff -rud ./new/include/ARToolKitPlus/matrix.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/matrix.h
+--- ./new/include/ARToolKitPlus/matrix.h	2006-02-10 01:26:58.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/matrix.h	2006-03-31 10:51:31.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: matrix.h 138 2006-02-09 12:26:59Z breiting $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITMATRIX_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/MemoryManager.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/MemoryManager.h
+--- ./new/include/ARToolKitPlus/MemoryManager.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/MemoryManager.h	2006-03-31 11:02:39.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: MemoryManager.h 111 2006-01-04 08:06:18Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITPLUS_MEMORYMANAGER_HEADERFILE__
+@@ -60,6 +60,8 @@
+ class MemoryManager
+ {
+ public:
++	virtual ~MemoryManager() {;};
++
+ 	/// The MemoryManager will allocate an initial amount of memory
+ 	/**
+ 	 *  Each time the MemoryManager does not have enough memory left for
+diff -rud ./new/include/ARToolKitPlus/MemoryManagerMemMap.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/MemoryManagerMemMap.h
+--- ./new/include/ARToolKitPlus/MemoryManagerMemMap.h	2006-01-14 01:56:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/MemoryManagerMemMap.h	2006-03-31 10:51:24.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: MemoryManagerMemMap.h 114 2006-01-13 12:56:21Z breiting $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ #ifndef __ARTOOLKITPLUS_MEMORYMANAGERMEMMAP_HEADERFILE__
+ #define __ARTOOLKITPLUS_MEMORYMANAGERMEMMAP_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/param.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/param.h
+--- ./new/include/ARToolKitPlus/param.h	2006-02-10 01:26:58.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/param.h	2006-03-31 10:51:09.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: param.h 138 2006-02-09 12:26:59Z breiting $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_PARAM_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/Tracker.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/Tracker.h
+--- ./new/include/ARToolKitPlus/Tracker.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/Tracker.h	2006-03-31 10:54:06.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: Tracker.h 148 2006-03-01 01:29:05Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_TRACKER_HEADERFILE__
+@@ -70,7 +70,7 @@
+ class Tracker
+ {
+ public:
+-	~Tracker()
++	virtual ~Tracker()
+ 	{}
+ 
+ 	/// does final clean up (memory deallocation)
+diff -rud ./new/include/ARToolKitPlus/TrackerImpl.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerImpl.h
+--- ./new/include/ARToolKitPlus/TrackerImpl.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerImpl.h	2006-03-31 10:51:00.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: TrackerImpl.h 148 2006-03-01 01:29:05Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKIT_TRACKERIMPL_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/TrackerMultiMarker.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerMultiMarker.h
+--- ./new/include/ARToolKitPlus/TrackerMultiMarker.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerMultiMarker.h	2006-03-31 10:50:46.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: TrackerMultiMarker.h 148 2006-03-01 01:29:05Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __TRACKERMULTIMARKER_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/TrackerMultiMarkerImpl.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerMultiMarkerImpl.h
+--- ./new/include/ARToolKitPlus/TrackerMultiMarkerImpl.h	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerMultiMarkerImpl.h	2006-03-31 10:50:52.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: TrackerMultiMarkerImpl.h 148 2006-03-01 01:29:05Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITPLUS_TRACKERMULTIMARKERIMPL_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/TrackerSingleMarker.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerSingleMarker.h
+--- ./new/include/ARToolKitPlus/TrackerSingleMarker.h	2006-02-14 10:11:46.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/TrackerSingleMarker.h	2006-03-31 10:50:06.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: TrackerSingleMarker.h 144 2006-02-13 21:11:47Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __TRACKERSINGLEMARKER_HEADERFILE__
+diff -rud ./new/include/ARToolKitPlus/vector.h /usr/local/src/artoolkitplus/include/ARToolKitPlus/vector.h
+--- ./new/include/ARToolKitPlus/vector.h	2006-02-10 01:26:58.000000000 +1300
++++ /usr/local/src/artoolkitplus/include/ARToolKitPlus/vector.h	2006-03-31 10:50:36.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: vector.h 138 2006-02-09 12:26:59Z breiting $
+ * @file
+-/* ======================================================================= */
++* ======================================================================== */
+ 
+ 
+ #ifndef __ARTOOLKITVECTOR_HEADERFILE__
+diff -rud ./new/src/ARToolKitPlus.cpp /usr/local/src/artoolkitplus/src/ARToolKitPlus.cpp
+--- ./new/src/ARToolKitPlus.cpp	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/ARToolKitPlus.cpp	2006-03-31 11:00:31.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: ARToolKitPlus.cpp 148 2006-03-01 01:29:05Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ //#include <ARToolKitPlus/ARToolKitPlus.h>
+diff -rud ./new/src/CameraAdvImpl.cxx /usr/local/src/artoolkitplus/src/CameraAdvImpl.cxx
+--- ./new/src/CameraAdvImpl.cxx	2006-01-26 04:00:00.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/CameraAdvImpl.cxx	2006-03-31 11:00:35.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: CameraAdvImpl.cxx 123 2006-01-25 15:00:01Z pintaric $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdlib.h>
+diff -rud ./new/src/CameraFactory.cxx /usr/local/src/artoolkitplus/src/CameraFactory.cxx
+--- ./new/src/CameraFactory.cxx	2006-01-23 01:20:24.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/CameraFactory.cxx	2006-03-31 11:00:38.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: CameraFactory.cxx 120 2006-01-22 12:20:24Z pintaric $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/CameraFactory.h>
+diff -rud ./new/src/CameraImpl.cxx /usr/local/src/artoolkitplus/src/CameraImpl.cxx
+--- ./new/src/CameraImpl.cxx	2006-01-26 04:00:00.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/CameraImpl.cxx	2006-03-31 11:00:42.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: CameraImpl.cxx 123 2006-01-25 15:00:01Z pintaric $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdlib.h>
+diff -rud ./new/src/core/arBitFieldPattern.cxx /usr/local/src/artoolkitplus/src/core/arBitFieldPattern.cxx
+--- ./new/src/core/arBitFieldPattern.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arBitFieldPattern.cxx	2006-03-31 10:57:44.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arBitFieldPattern.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================== */
+ 
+ 
+ #include <ARToolKitPlus/Tracker.h>
+diff -rud ./new/src/core/arDetectMarker2.cxx /usr/local/src/artoolkitplus/src/core/arDetectMarker2.cxx
+--- ./new/src/core/arDetectMarker2.cxx	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arDetectMarker2.cxx	2006-03-31 10:57:53.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arDetectMarker2.cxx 148 2006-03-01 01:29:05Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================== */
+ 
+ 
+ #include <ARToolKitPlus/Tracker.h>
+diff -rud ./new/src/core/arDetectMarker.cxx /usr/local/src/artoolkitplus/src/core/arDetectMarker.cxx
+--- ./new/src/core/arDetectMarker.cxx	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arDetectMarker.cxx	2006-03-31 10:39:18.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arDetectMarker.cxx 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/Tracker.h>
+diff -rud ./new/src/core/arGetCode.cxx /usr/local/src/artoolkitplus/src/core/arGetCode.cxx
+--- ./new/src/core/arGetCode.cxx	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arGetCode.cxx	2006-03-31 10:58:30.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arGetCode.cxx 148 2006-03-01 01:29:05Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================== */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/arGetMarkerInfo.cxx /usr/local/src/artoolkitplus/src/core/arGetMarkerInfo.cxx
+--- ./new/src/core/arGetMarkerInfo.cxx	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arGetMarkerInfo.cxx	2006-03-31 10:58:35.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arGetMarkerInfo.cxx 139 2006-02-10 07:18:16Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/Tracker.h>
+diff -rud ./new/src/core/arGetTransMat2.cxx /usr/local/src/artoolkitplus/src/core/arGetTransMat2.cxx
+--- ./new/src/core/arGetTransMat2.cxx	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arGetTransMat2.cxx	2006-03-31 10:58:39.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arGetTransMat2.cxx 139 2006-02-10 07:18:16Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ //#include <stdlib.h>
+diff -rud ./new/src/core/arGetTransMat3.cxx /usr/local/src/artoolkitplus/src/core/arGetTransMat3.cxx
+--- ./new/src/core/arGetTransMat3.cxx	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arGetTransMat3.cxx	2006-03-31 10:58:43.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arGetTransMat3.cxx 139 2006-02-10 07:18:16Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ #define CHECK_CALC 0
+ 
+diff -rud ./new/src/core/arGetTransMatCont.cxx /usr/local/src/artoolkitplus/src/core/arGetTransMatCont.cxx
+--- ./new/src/core/arGetTransMatCont.cxx	2006-01-26 00:10:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arGetTransMatCont.cxx	2006-03-31 10:58:48.000000000 +1200
+@@ -35,7 +35,7 @@
+ *
+ * $Id: arGetTransMatCont.cxx 121 2006-01-25 11:10:05Z daniel $
+ * @file
+-/* ======================================================================= */
++* ======================================================================= */
+ 
+ //static double arGetTransMatContSub( ARMarkerInfo *marker_info, double prev_conv[3][4],
+ //                                    double center[2], double width, double conv[3][4] );
+diff -rud ./new/src/core/arGetTransMat.cxx /usr/local/src/artoolkitplus/src/core/arGetTransMat.cxx
+--- ./new/src/core/arGetTransMat.cxx	2006-03-01 16:49:58.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arGetTransMat.cxx	2006-03-31 10:58:53.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arGetTransMat.cxx 149 2006-03-01 03:49:58Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdlib.h>
+diff -rud ./new/src/core/arLabeling.cxx /usr/local/src/artoolkitplus/src/core/arLabeling.cxx
+--- ./new/src/core/arLabeling.cxx	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arLabeling.cxx	2006-03-31 10:58:58.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arLabeling.cxx 139 2006-02-10 07:18:16Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdlib.h>
+diff -rud ./new/src/core/arMultiActivate.cxx /usr/local/src/artoolkitplus/src/core/arMultiActivate.cxx
+--- ./new/src/core/arMultiActivate.cxx	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arMultiActivate.cxx	2006-03-31 10:59:01.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arMultiActivate.cxx 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/arMultiGetTransMat.cxx /usr/local/src/artoolkitplus/src/core/arMultiGetTransMat.cxx
+--- ./new/src/core/arMultiGetTransMat.cxx	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arMultiGetTransMat.cxx	2006-03-31 10:59:05.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arMultiGetTransMat.cxx 139 2006-02-10 07:18:16Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/arMultiReadConfigFile.cxx /usr/local/src/artoolkitplus/src/core/arMultiReadConfigFile.cxx
+--- ./new/src/core/arMultiReadConfigFile.cxx	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arMultiReadConfigFile.cxx	2006-03-31 10:59:09.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arMultiReadConfigFile.cxx 148 2006-03-01 01:29:05Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/arUtil.cxx /usr/local/src/artoolkitplus/src/core/arUtil.cxx
+--- ./new/src/core/arUtil.cxx	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/arUtil.cxx	2006-03-31 10:59:13.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: arUtil.cxx 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/byteSwap.cxx /usr/local/src/artoolkitplus/src/core/byteSwap.cxx
+--- ./new/src/core/byteSwap.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/byteSwap.cxx	2006-03-31 10:59:17.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: byteSwap.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/param.h>
+diff -rud ./new/src/core/matrix.cxx /usr/local/src/artoolkitplus/src/core/matrix.cxx
+--- ./new/src/core/matrix.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/matrix.cxx	2006-03-31 10:59:21.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: matrix.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/mPCA.cxx /usr/local/src/artoolkitplus/src/core/mPCA.cxx
+--- ./new/src/core/mPCA.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/mPCA.cxx	2006-03-31 10:59:25.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: mPCA.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/paramDecomp.cxx /usr/local/src/artoolkitplus/src/core/paramDecomp.cxx
+--- ./new/src/core/paramDecomp.cxx	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/paramDecomp.cxx	2006-03-31 10:59:29.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: paramDecomp.cxx 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/paramDistortion.cxx /usr/local/src/artoolkitplus/src/core/paramDistortion.cxx
+--- ./new/src/core/paramDistortion.cxx	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/paramDistortion.cxx	2006-03-31 10:59:32.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: paramDistortion.cxx 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/paramFile.cxx /usr/local/src/artoolkitplus/src/core/paramFile.cxx
+--- ./new/src/core/paramFile.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/paramFile.cxx	2006-03-31 10:59:36.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: paramFile.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/rppGetTransMat.cxx /usr/local/src/artoolkitplus/src/core/rppGetTransMat.cxx
+--- ./new/src/core/rppGetTransMat.cxx	2006-02-10 20:18:16.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/rppGetTransMat.cxx	2006-03-31 10:59:40.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: rppGetTransMat.cxx 139 2006-02-10 07:18:16Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdlib.h>
+diff -rud ./new/src/core/rppMultiGetTransMat.cxx /usr/local/src/artoolkitplus/src/core/rppMultiGetTransMat.cxx
+--- ./new/src/core/rppMultiGetTransMat.cxx	2006-01-26 03:54:00.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/rppMultiGetTransMat.cxx	2006-03-31 10:59:43.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: rppMultiGetTransMat.cxx 122 2006-01-25 14:54:01Z pintaric $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdio.h>
+diff -rud ./new/src/core/vector.cxx /usr/local/src/artoolkitplus/src/core/vector.cxx
+--- ./new/src/core/vector.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/core/vector.cxx	2006-03-31 10:59:47.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: vector.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <stdlib.h>
+diff -rud ./new/src/extra/BCH.cxx /usr/local/src/artoolkitplus/src/extra/BCH.cxx
+--- ./new/src/extra/BCH.cxx	2006-02-09 12:26:20.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/extra/BCH.cxx	2006-03-31 11:01:19.000000000 +1200
+@@ -32,7 +32,7 @@
+  *
+  * $Id: BCH.cxx 134 2006-02-08 23:26:20Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/extra/BCH.h>
+diff -rud ./new/src/extra/GPP.h /usr/local/src/artoolkitplus/src/extra/GPP.h
+--- ./new/src/extra/GPP.h	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/extra/GPP.h	2006-03-31 11:01:15.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: GPP.h 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #ifndef __GPP_HEADERFILE__
+diff -rud ./new/src/MemoryManager.cpp /usr/local/src/artoolkitplus/src/MemoryManager.cpp
+--- ./new/src/MemoryManager.cpp	2006-01-04 21:06:18.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/MemoryManager.cpp	2006-03-31 11:00:51.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: MemoryManager.cpp 111 2006-01-04 08:06:18Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/MemoryManager.h>
+diff -rud ./new/src/MemoryManagerMemMap.cpp /usr/local/src/artoolkitplus/src/MemoryManagerMemMap.cpp
+--- ./new/src/MemoryManagerMemMap.cpp	2006-01-15 00:10:14.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/MemoryManagerMemMap.cpp	2006-03-31 11:00:46.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: MemoryManagerMemMap.cpp 117 2006-01-14 11:10:14Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #include <ARToolKitPlus/MemoryManagerMemMap.h>
+diff -rud ./new/src/TrackerImpl.cxx /usr/local/src/artoolkitplus/src/TrackerImpl.cxx
+--- ./new/src/TrackerImpl.cxx	2006-03-02 14:24:22.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/TrackerImpl.cxx	2006-03-31 11:00:55.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: TrackerImpl.cxx 150 2006-03-02 01:24:23Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ //#include <ARToolKitPlus/Tracker.h>
+diff -rud ./new/src/TrackerMultiMarkerImpl.cxx /usr/local/src/artoolkitplus/src/TrackerMultiMarkerImpl.cxx
+--- ./new/src/TrackerMultiMarkerImpl.cxx	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/TrackerMultiMarkerImpl.cxx	2006-03-31 11:00:58.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: TrackerMultiMarkerImpl.cxx 148 2006-03-01 01:29:05Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ #ifndef __ARTOOLKITPLUS_TRACKERMULTIMARKERIMPL_HEADERFILE__
+diff -rud ./new/src/TrackerSingleMarkerImpl.cxx /usr/local/src/artoolkitplus/src/TrackerSingleMarkerImpl.cxx
+--- ./new/src/TrackerSingleMarkerImpl.cxx	2006-03-01 14:29:04.000000000 +1300
++++ /usr/local/src/artoolkitplus/src/TrackerSingleMarkerImpl.cxx	2006-03-31 11:01:02.000000000 +1200
+@@ -35,7 +35,7 @@
+  *
+  * $Id: TrackerSingleMarkerImpl.cxx 148 2006-03-01 01:29:05Z daniel $
+  * @file
+-/* ======================================================================= */
++ * ======================================================================= */
+ 
+ 
+ //#pragma message ( "Compiling TrackerSingleMarkerImpl.cxx" )

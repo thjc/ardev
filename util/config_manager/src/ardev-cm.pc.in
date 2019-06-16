@@ -1,0 +1,12 @@
+# DO NOT edit ardev-cm.pc; edit ardev-cm.pc.in instead
+
+prefix=@prefix@
+
+# this gives access to the config_manager for ardev
+
+Name: config_manager
+Description: Configuration Manager for AR (ARDev)
+Version: @VERSION@
+Requires: ardev
+Libs: -L${prefix}/lib -lardev-cm -lMagick++ -lardev @LIBS@ @QT_LIBS@ @QTXML_LIBS@ @QTCORE_LIBS@ @PLAYER_LIBS@ @OPENCV_LIBS@ @ARTOOLKITPLUS_LIBS@ 
+Cflags: -I${prefix}/include @QT_CFLAGS@ @QTXML_CFLAGS@ @QTCORE_CFLAGS@ @PLAYER_CFLAGS@ @OPENCV_CFLAGS@ @ARTOOLKITPLUS_CFLAGS@

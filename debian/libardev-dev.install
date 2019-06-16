@@ -1,0 +1,8 @@
+usr/include/*
+usr/lib/libardev.a
+usr/lib/libardev.la
+usr/lib/libardev.so
+usr/lib/libthjc.a
+usr/lib/libthjc.la
+usr/lib/libthjc.so
+usr/lib/pkgconfig/ardev.pc

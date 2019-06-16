@@ -1,0 +1,28 @@
+/* this file defines which features were present and enabled at compile time */
+
+/* Define to 1 if you have the `dc1394' library (-ldc1394). */
+#undef HAVE_DC1394
+
+/* opencv is available */
+#undef HAVE_OPENCV
+
+/* Player is available */
+#undef HAVE_PLAYER
+
+/* ARToolkit is available */
+#undef HAVE_ARTOOLKIT
+
+/* ARToolkitplus is available */
+#undef HAVE_ARTOOLKITPLUS
+
+/* ARIDE is being built is available */
+#undef HAVE_ARIDE
+
+/* ffmpeg available */
+#undef HAVE_FFMPEG
+
+/* Ant Tweak Bar available */
+#undef HAVE_ANTTWEAKBAR
+
+/* Can load dynamic libraries at runtime */
+#define HAVE_LIBLTDL 1

@@ -1,0 +1,108 @@
+2011-05-07: Toby Collett
+0.10.2 Fix for build with recent kernels without V4L1
+
+2009-12-10: David Olsen
+0.9.0-rc2 Added save prompt
+          Fixed ARIDE GUI seg-fault
+          Fixed crash on visualization close
+          Fixed overlay GUI initialization problems
+          Fixed missing transform in chains
+          Overlay GUI display list shows entire hierarchy
+
+2007-08-28: Toby Collett
+0.8.0 Update to player svn head pose changes
+      Fixed some segfaults
+      Merge libthjc into dist package, this will make installation easier
+
+2007-05-07: Toby Collett
+0.7.0 Changed licesnse to LGPL
+      Bumped version for sourceforge release
+
+2006-08-19: Toby Collett
+0.6.5 Updated 1394 driver to work with RC3 of libdc1394
+
+2006-08-15: Toby Collett
+0.6.4 Improved documentation 
+      Other bug fixes
+
+2006-05-30: Toby Collett
+0.6.3 Fixed build errors related to config checking errors
+
+2006-05-29: Toby Collett
+0.6.2 Improved documentation of the core libraries
+
+2006-05-23: Toby Collett
+0.6.1 Fixes for the configure scripts etc
+
+2006-05-01: Toby Collett
+0.6.0 Added graphics3d interface support
+
+2006-04-29: Toby Collett
+0.5.1 Some improvements in the point detection code in the calibration app
+      fixed player module to look up render object by name rather than GUID
+
+2006-04-27: Toby Collett
+0.5.0 Some more fixes for the GUI and config manager
+
+2006-04-18: Toby Collett
+      Split the Config GUI into configuration manager and GUI so
+        the code sits better in the player plugin
+        also means the dependance on QT for that part can be removed
+        at some stage (although its needed for the XML parser at the moment)
+
+2006-04-10: Toby Collett
+      Added support for loading aride projects in the player plugin
+      Upgraded UI's to QT4.1
+
+2006-03-27: Toby Collett
+0.4.0 Added a player plugin module with support for the graphics2d interface
+
+2006-03-21: Toby Collett
+      Enhancements to configure.ac etc to make the build process
+        more robust and missing dependencies more obvious
+
+2006-03-17: Toby Collett
+0.3.0 Many many bug fixes in the opengl geometry etc
+      Firewire support added
+      Improvements to the flexibility of camera and object positioning
+      Upgraded to use player 2
+
+2005-09-16: Toby Collett
+0.2.4 player Map and Localise interface visualisation added
+      Destructor bug that caused crashes on termination in blob tracker fixed
+      Improvements to blob tracking (thanks Brad)
+
+2005-09-12: Toby Collett
+0.2.3 Corrected rendering of transparent layers, should look okay
+      Added bumper and PTZ renderings
+
+2005-09-10: Toby Collett
+0.2.2 More changes to calibration app to make it more robust
+      Some bug fixes with manual calibration process, it now correctly 
+      loads the 3d points
+
+2005-08-31: Toby Collett
+0.2.1 Calibration app bug fixes and manual calibration
+      Readme added for calib app to describe manual calibration
+
+2005-08-19: Toby Collett
+0.2.0 X11 output now works full screen
+      Code now able to detect robot 'connections' and 'disconnections'
+
+2005-07-29: Toby Collett
+Aride UI given complete overhaul, hopefully easier to use now.
+
+2005-07-20: Toby Collett
+0.1.3 Fixed more bugs
+      V4L capture now actually sets the norm mode (PAL/NTSC etc)
+      fixed a bad pre processor directive in opencv code
+
+2005-07-19: Toby Collett
+0.1.2 Bug fix release, fixed some library dependancies
+      Also updated the stage debug moduels to work with new stage (1.6.2)
+
+2005-07-19: Toby Collett 
+0.1.1 Initial release
+
+
+

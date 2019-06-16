@@ -1,0 +1,113 @@
+<aride_project version="0.3" >
+ <objects>
+  <output Width="800" DisplayName=":0" Camera="GUID::3" Height="600" CameraPosition="GUID::7" Type="OutputX11" GUID="GUID::1" Enabled="True" Parent="" Name="OutputX110" FullScreen="True" Capture="GUID::2" />
+  <capture Type="CaptureDC1394" GUID="GUID::2" Enabled="True" Parent="" Name="capture" />
+  <camera Origin="0 0 0" Aspect="1.6" Direction="1 0 0" Type="CameraConstant" GUID="GUID::3" Enabled="True" Parent="" Up="0 0 1" Name="CameraConstant0" SensorWidth="0.008" CalibrationFile="/home/robot/overhead.calib" f_fov="45" />
+  <preprocess CameraObject="GUID::3" Type="ARToolKitPlusPreProcess" GUID="GUID::4" Enabled="True" Parent="" Name="ARToolKitPlusPreProcess0" />
+  <position Height="0.31" Type="ARToolKitPlusPosition" GUID="GUID::6" Enabled="True" Parent="" MarkerID="11" Name="sleepy" PreProcessor="GUID::4" />
+  <misc PlayerPort="6665" PlayerServer="sleepy" Type="PlayerClientInterface" GUID="GUID::9" Enabled="True" Parent="" Name="sleepy_player" />
+  <position Type="CalibratedPosition" GUID="GUID::7" Enabled="True" Parent="" Name="camera_position" CalibrationFile="/home/robot/overhead.calib" />
+  <position Type="PositionConstant" GUID="GUID::10" Enabled="True" Parent="" Name="Robot_offset" Position="0.15 0 -0.31 0 0 0" />
+  <position Type="PositionConstant" GUID="GUID::8" Enabled="True" Parent="" Name="laser_position" Position="0 0 0.13 0 0 0" />
+  <render WithOutline="True" Type="RenderPlayerLaser" GUID="GUID::11" Enabled="True" Parent="" Colour="0 0 1 1" Name="sleepy_laser" PlayerClient="GUID::9" RayInterval="60" />
+  <render Type="RenderGraphics2DHandler" GUID="GUID::12" Enabled="True" Parent="" Name="g2d_sleepy" />
+  <render Type="RenderGraphics3DHandler" GUID="GUID::13" Enabled="True" Parent="" Name="g3d_sleepy" />
+  <position Height="0.31" Type="ARToolKitPlusPosition" GUID="GUID::14" Enabled="True" Parent="" MarkerID="12" Name="grumpy" PreProcessor="GUID::4" />
+  <position Type="PositionConstant" GUID="GUID::15" Enabled="True" Parent="" Name="grumpy_offset" Position="0.15 0 -0.31 0 0 0" />
+  <position Type="PositionConstant" GUID="GUID::16" Enabled="True" Parent="" Name="grumpy_laser_offset" Position="0 0 0.13 0 0 0" />
+  <misc PlayerPort="6665" PlayerServer="grumpy" Type="PlayerClientInterface" GUID="GUID::17" Enabled="True" Parent="" Name="grumpy_player" />
+  <render WithOutline="True" Type="RenderPlayerLaser" GUID="GUID::18" Enabled="True" Parent="" Colour="0 1 0 1" Name="grumpy_laser" PlayerClient="GUID::17" RayInterval="60" />
+  <render Type="RenderGraphics3DHandler" GUID="GUID::26" Enabled="True" Parent="" Name="grumpy_g3d" />
+  <position Type="PositionConstant" GUID="GUID::19" Enabled="True" Parent="" Name="grumpy_g2d_offset" Position="0 0 0.1 0 0 0" />
+  <render Type="RenderGraphics2DHandler" GUID="GUID::20" Enabled="True" Parent="" Name="grumpy_g2d" />
+  <position Height="0.31" Type="ARToolKitPlusPosition" GUID="GUID::22" Enabled="True" Parent="" MarkerID="16" Name="sneezy" PreProcessor="GUID::4" />
+  <position Type="PositionConstant" GUID="GUID::23" Enabled="True" Parent="" Name="sneezy_offset" Position="0.15 0 -0.31 0 0 0" />
+  <position Type="PositionConstant" GUID="GUID::24" Enabled="True" Parent="" Name="laser_position" Position="0 0 0.13 0 0 0" />
+  <misc PlayerPort="6665" PlayerServer="sneezy" Type="PlayerClientInterface" GUID="GUID::25" Enabled="True" Parent="" Name="sneezy_player" />
+  <render WithOutline="False" Type="RenderPlayerLaser" GUID="GUID::27" Enabled="True" Parent="" Colour="1 0 1 1" Name="sneezy_laser" PlayerClient="GUID::25" RayInterval="20" />
+  <render Type="RenderGraphics2DHandler" GUID="GUID::28" Enabled="True" Parent="" Name="sneezy_g2d" />
+  <render Type="RenderGraphics3DHandler" GUID="GUID::29" Enabled="True" Parent="" Name="sneezy_g3d" />
+  <render Radius="0.05" Type="RenderPlayerLimb" GUID="GUID::31" Enabled="False" Parent="" Colour="1 0 0 1" Name="grumpy_limb" PlayerClient="GUID::17" Index="0" />
+  <render Type="RenderPlayerActArray" GUID="GUID::32" Enabled="True" Parent="" Colour="1 1 0 1" Name="grumpy_act_array" PlayerClient="GUID::17" Index="0" />
+  <position Height="0.31" Type="ARToolKitPlusPosition" GUID="GUID::33" Enabled="True" Parent="" MarkerID="13" Name="dopey" PreProcessor="GUID::4" />
+  <position Type="PositionConstant" GUID="GUID::34" Enabled="True" Parent="" Name="Robot_offset" Position="0.15 0 -0.31 0 0 0" />
+  <position Type="PositionConstant" GUID="GUID::35" Enabled="True" Parent="" Name="laser_position" Position="0 0 0.13 0 0 0" />
+  <misc PlayerPort="6665" PlayerServer="dopey" Type="PlayerClientInterface" GUID="GUID::36" Enabled="True" Parent="" Name="dopey_player" />
+  <render WithOutline="True" Type="RenderPlayerLaser" GUID="GUID::37" Enabled="True" Parent="" Colour="0.58 0 0.24 1" Name="dopey_laser" PlayerClient="GUID::36" RayInterval="20" />
+  <render Type="RenderGraphics2DHandler" GUID="GUID::38" Enabled="True" Parent="" Name="dopey_g2d" />
+  <render Type="RenderGraphics3DHandler" GUID="GUID::39" Enabled="True" Parent="" Name="dopey_g3d" />
+  <position Height="0.31" Type="ARToolKitPlusPosition" GUID="GUID::41" Enabled="True" Parent="" MarkerID="14" Name="bashful" PreProcessor="GUID::4" />
+  <position Type="PositionConstant" GUID="GUID::42" Enabled="True" Parent="" Name="robot_offset" Position="0.15 0 -0.31 0 0 0" />
+  <misc PlayerPort="6665" PlayerServer="bashful" Type="PlayerClientInterface" GUID="GUID::43" Enabled="True" Parent="" Name="bashful_player" />
+  <position Type="PositionConstant" GUID="GUID::44" Enabled="True" Parent="" Name="LaserPosition" Position="0 0 0.13 0 0 0" />
+  <render WithOutline="False" Type="RenderPlayerLaser" GUID="GUID::45" Enabled="True" Parent="" Colour="1 0.5 0.2 1" Name="bashful_laser" PlayerClient="GUID::43" RayInterval="20" />
+ </objects>
+ <environment Camera="GUID::3" GUID="GUID::0" Enabled="True" Name="Environment0" Capture="GUID::2" Output="GUID::1" >
+  <item GUID="GUID::4" />
+ </environment>
+ <display_list GUID="GUID::47" Name="Global" >
+  <item GUID="GUID::7" />
+ </display_list>
+ <display_list GUID="GUID::5" Name="Sleepy" >
+  <item GUID="GUID::6" >
+   <item GUID="GUID::10" >
+    <item GUID="GUID::8" >
+     <item GUID="GUID::11" />
+    </item>
+    <item GUID="GUID::12" />
+    <item GUID="GUID::13" />
+   </item>
+  </item>
+  <item GUID="GUID::9" />
+ </display_list>
+ <display_list GUID="GUID::21" Name="Sneezy" >
+  <item GUID="GUID::22" >
+   <item GUID="GUID::23" >
+    <item GUID="GUID::24" >
+     <item GUID="GUID::27" />
+    </item>
+    <item GUID="GUID::28" />
+    <item GUID="GUID::29" />
+   </item>
+  </item>
+  <item GUID="GUID::25" />
+ </display_list>
+ <display_list GUID="GUID::30" Name="Dopey" >
+  <item GUID="GUID::33" >
+   <item GUID="GUID::34" >
+    <item GUID="GUID::35" >
+     <item GUID="GUID::37" />
+    </item>
+    <item GUID="GUID::38" />
+    <item GUID="GUID::39" />
+   </item>
+  </item>
+  <item GUID="GUID::36" />
+ </display_list>
+ <display_list GUID="GUID::40" Name="Bashful" >
+  <item GUID="GUID::41" >
+   <item GUID="GUID::42" >
+    <item GUID="GUID::44" >
+     <item GUID="GUID::45" />
+    </item>
+   </item>
+  </item>
+  <item GUID="GUID::43" />
+ </display_list>
+ <display_list GUID="GUID::46" Name="Grumpy" >
+  <item GUID="GUID::14" >
+   <item GUID="GUID::15" >
+    <item GUID="GUID::16" >
+     <item GUID="GUID::18" />
+    </item>
+    <item GUID="GUID::26" />
+    <item GUID="GUID::19" >
+     <item GUID="GUID::20" />
+    </item>
+    <item GUID="GUID::31" />
+    <item GUID="GUID::32" />
+   </item>
+  </item>
+  <item GUID="GUID::17" />
+ </display_list>
+</aride_project>
